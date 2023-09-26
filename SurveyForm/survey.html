@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="survey.css">
+    
+</head>
+<body>
+    <div class="container">
+    <div style="background-color: rgb(236, 243, 247);">
+        <header class="header">
+            <h1>Survey From Cloud Vandana</h1>
+        </header>
+      
+    <form id="surveyForm">
+        <h1> Survey Form</h1>
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="John" required><br><br>
+
+        </div>
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Doe" required><br><br>
+
+        </div>
+        <div>
+            <label for="dob">First Name</label>
+            <input type="date" id="dob" required><br><br>
+
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" required>
+                <option value="" > Select Country</option>
+                <option value="Afganistan">Afganistan</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Fiji">Fiji</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Greece">Greece</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iran">Iran</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Isreal">Isreal</option>
+                <option value="Italy">Italy</option>
+                <option value="Japan">Japan</option>
+                <option value="Korea">Korea</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Nepal">Nepal</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Russia">Russia</option>
+                <option value="Spain">Spain</option>
+                <option value="Switzerland">Switzerland</option>
+                <!-- Add more countries as needed -->
+            </select>
+        </div>
+
+        <div>
+            <table class="gender">
+                <tr>
+                    <td> <label>Gender:</label>  </td>
+                    <td>
+                        <input type="checkbox" id="male" name="gender" value="Male"> Male
+                        <input type="checkbox" id="female" name="gender" value="Female"> Female
+                    </td>
+                </tr>
+            </table> 
+        </div>
+
+        <div>
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" required><br><br>
+        </div>
+        
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br><br>
+        </div>
+
+        <div>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" required><br><br>
+        </div>
+
+        <button type="submit" id="submitButton">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</div> 
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Survey Form Data</h2>
+            <p><strong>First Name:</strong> <span id="popupFirstName"></span></p>
+            <p><strong>Last Name:</strong> <span id="popupLastName"></span></p>
+            <p><strong>Date of Birth:</strong> <span id="popupDOB"></span></p>
+            <p><strong>Country:</strong> <span id="popupCountry"></span></p>
+            <p><strong>Gender:</strong> <span id="popupGender"></span></p>
+            <p><strong>Profession:</strong> <span id="popupProfession"></span></p>
+            <p><strong>Email:</strong> <span id="popupEmail"></span></p>
+            <p><strong>Mobile Number:</strong> <span id="popupMobile"></span></p>
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
+    </div>
+
+    <script src="survey.js"></script>
+
+</body>
+</html>
